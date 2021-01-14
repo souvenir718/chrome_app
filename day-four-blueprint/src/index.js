@@ -1,7 +1,5 @@
-// <⚠️ DONT DELETE THIS ⚠️>
 import { purple } from 'color-name';
 import './styles.css';
-// <⚠️ /DONT DELETE THIS ⚠️>
 
 const body = document.querySelector('body');
 
