@@ -1,0 +1,15 @@
+body {
+    font-family: sans-serif;
+}
+h1 {
+    color: white;
+}
+.blue {
+    background-color: blue;
+}
+.yellow {
+    background-color: yellow;
+}
+.purple {
+    background-color: purple;
+}
