@@ -1,4 +1,3 @@
-import { purple } from 'color-name';
 import './styles.css';
 
 const body = document.querySelector('body');
