@@ -1,4 +1,11 @@
 body {
     font-family: sans-serif;
   }
+
+.show {
+    display: block;
+  }
+.hide{
+    display: none;
+  }
   
