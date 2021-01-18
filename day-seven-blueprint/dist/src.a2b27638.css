@@ -1,5 +1,23 @@
 body {
-    font-family: sans-serif;
+  font-family: sans-serif;
+}
+button {
+  color: white;
+  border-radius: 10%;
+  border: 0;
+  cursor: pointer;
+}
+.delete {
+  border: 1px solid red;
+  background-color: red;
+}
+.finish {
+  border: 1px solid blue;
+  background-color: blue;
+}
+.pending {
+  border: 1px solid green;
+  background-color: green;
 }
 
 

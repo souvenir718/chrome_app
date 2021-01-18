@@ -194,15 +194,12 @@ module.hot.accept(reloadCSS);
 
 require("./styles.css");
 
-// <⚠️ DONT DELETE THIS ⚠️>
-// <⚠️ /DONT DELETE THIS ⚠️>
-//Math.random().toString(36).slice(2)
-var taskForm = document.querySelector('.js-addTask'),
-    taskInput = taskForm.querySelector('input'),
-    pendingList = document.querySelector('.js-pending'),
-    finishedList = document.querySelector('.js-finished');
-var PENDING_LS = 'PENDING';
-var FINISHED_LS = 'FINISHED';
+var taskForm = document.querySelector(".js-addTask"),
+    taskInput = taskForm.querySelector("input"),
+    pendingList = document.querySelector(".js-pending"),
+    finishedList = document.querySelector(".js-finished");
+var PENDING_LS = "PENDING";
+var FINISHED_LS = "FINISHED";
 var pendingTodos = [];
 var finishedTodos = [];
 
@@ -213,14 +210,14 @@ function loadToDos() {
   if (loadedPendingTodos !== null) {
     var parsedPendingTodos = JSON.parse(loadedPendingTodos);
     parsedPendingTodos.forEach(function (todo) {
-      paintTodo(todo.text);
+      paintTodo(todo.text, "pending");
     });
   }
 
   if (loadedFinishedTodos !== null) {
     var parsedFinishedTodos = JSON.parse(loadedFinishedTodos);
     parsedFinishedTodos.forEach(function (todo) {
-      paintTodo2(todo.text);
+      paintTodo(todo.text, "finished");
     });
   }
 }
@@ -230,150 +227,111 @@ function saveTodos() {
   localStorage.setItem(FINISHED_LS, JSON.stringify(finishedTodos));
 }
 
-function deletePending(event) {
+function deleteTodos(type, event) {
   var btn = event.target;
   var li = btn.parentNode;
-  pendingList.removeChild(li);
-  var cleanPendings = pendingTodos.filter(function (todo) {
-    return todo.id !== parseInt(li.id);
-  });
-  pendingTodos = cleanPendings;
+
+  if (type === "pending") {
+    pendingList.removeChild(li);
+    var cleanPendings = pendingTodos.filter(function (todo) {
+      return todo.id !== li.id;
+    });
+    pendingTodos = cleanPendings;
+  } else {
+    finishedList.removeChild(li);
+    var cleanFinishs = finishedTodos.filter(function (todo) {
+      return todo.id !== li.id;
+    });
+    finishedTodos = cleanFinishs;
+  }
+
   saveTodos();
 }
 
-function deleteFinish(event) {
+function handlePending(type, event) {
   var btn = event.target;
   var li = btn.parentNode;
-  finishedList.removeChild(li);
-  var cleanFinish = finishedTodos.filter(function (todo) {
-    return todo.id !== parseInt(li.id);
-  });
-  finishedTodos = cleanFinish;
+  var text = li.querySelector("span").innerHTML;
+
+  if (type === "pending") {
+    pendingList.removeChild(li);
+    var cleanPendings = pendingTodos.filter(function (todo) {
+      return todo.id !== li.id;
+    });
+    pendingTodos = cleanPendings;
+    paintTodo(text, "finish");
+  } else {
+    finishedList.removeChild(li);
+    var cleanFinishs = finishedTodos.filter(function (todo) {
+      return todo.id !== li.id;
+    });
+    finishedTodos = cleanFinishs;
+    paintTodo(text, "pending");
+  }
+
   saveTodos();
 }
 
-function finishPending(event) {
-  var btn = event.target;
-  var li = btn.parentNode;
-  var finishLi = document.createElement('li');
-  var delBtn = document.createElement('button');
-  var pendingBtn = document.createElement('button');
-  var newId = finishedTodos.length + 1;
-  var finishSpan = document.createElement('span');
-  var text = li.querySelector('span').innerHTML;
-  delBtn.innerHTML = 'Delete';
-  pendingBtn.innerHTML = 'Pending';
-  finishSpan.innerHTML = text;
-  pendingList.removeChild(li);
-  var cleanPendings = pendingTodos.filter(function (todo) {
-    return todo.id !== parseInt(li.id);
-  });
-  pendingTodos = cleanPendings;
-  delBtn.addEventListener('click', deleteFinish);
-  pendingBtn.addEventListener('click', returnPending);
-  finishLi.appendChild(finishSpan);
-  finishLi.appendChild(delBtn);
-  finishLi.appendChild(pendingBtn);
-  finishLi.id = newId;
-  finishedList.appendChild(finishLi);
+function paintTodo(text, type) {
+  var li = document.createElement("li");
+  var delBtn = document.createElement("button");
+  var secondBtn = document.createElement("button");
+  var span = document.createElement("span");
+  var newId = Math.random().toString(36).slice(2);
+
+  if (type === "pending") {
+    secondBtn.innerHTML = "Finish";
+    secondBtn.classList.add("finish");
+    delBtn.addEventListener("click", function () {
+      deleteTodos("pending", event);
+    });
+    secondBtn.addEventListener("click", function () {
+      handlePending("pending", event);
+    });
+  } else {
+    secondBtn.innerHTML = "Pending";
+    secondBtn.classList.add("pending");
+    delBtn.addEventListener("click", function () {
+      deleteTodos("finished", event);
+    });
+    secondBtn.addEventListener("click", function () {
+      handlePending("finished", event);
+    });
+  }
+
+  delBtn.innerHTML = "Delete";
+  delBtn.classList.add("delete");
+  span.innerText = "".concat(text, "  ");
+  li.appendChild(span);
+  li.appendChild(delBtn);
+  li.appendChild(secondBtn);
+  li.id = newId;
   var toDoObj = {
     text: text,
     id: newId
   };
-  finishedTodos.push(toDoObj);
-  saveTodos();
-}
 
-function returnPending(event) {
-  var btn = event.target;
-  var li = btn.parentNode;
-  var pendingLi = document.createElement('li');
-  var delBtn = document.createElement('button');
-  var finishBtn = document.createElement('button');
-  var newId = pendingTodos.length + 1;
-  var pendingSpan = document.createElement('span');
-  var text = li.querySelector('span').innerHTML;
-  delBtn.innerHTML = 'Delete';
-  finishBtn.innerHTML = 'Finish';
-  pendingSpan.innerHTML = text;
-  finishedList.removeChild(li);
-  var cleanFinish = finishedTodos.filter(function (todo) {
-    return todo.id !== parseInt(li.id);
-  });
-  finishedTodos = cleanFinish;
-  delBtn.addEventListener('click', deletePending);
-  finishBtn.addEventListener('click', finishPending);
-  pendingLi.appendChild(pendingSpan);
-  pendingLi.appendChild(delBtn);
-  pendingLi.appendChild(finishBtn);
-  pendingLi.id = newId;
-  pendingList.appendChild(pendingLi);
-  var toDoObj = {
-    text: text,
-    id: newId
-  };
-  pendingTodos.push(toDoObj);
-  saveTodos();
-}
+  if (type === "pending") {
+    pendingList.appendChild(li);
+    pendingTodos.push(toDoObj);
+  } else {
+    finishedList.appendChild(li);
+    finishedTodos.push(toDoObj);
+  }
 
-function paintTodo(text) {
-  var pendingLi = document.createElement('li');
-  var delBtn = document.createElement('button');
-  var finishBtn = document.createElement('button');
-  var pendingSpan = document.createElement('span');
-  var newId = pendingTodos.length + 1;
-  delBtn.innerHTML = 'Delete';
-  finishBtn.innerHTML = 'Finish';
-  pendingSpan.innerText = "".concat(text, " ");
-  delBtn.addEventListener('click', deletePending);
-  finishBtn.addEventListener('click', finishPending);
-  pendingLi.appendChild(pendingSpan);
-  pendingLi.appendChild(delBtn);
-  pendingLi.appendChild(finishBtn);
-  pendingLi.id = newId;
-  pendingList.appendChild(pendingLi);
-  var toDoObj = {
-    text: text,
-    id: newId
-  };
-  pendingTodos.push(toDoObj);
-  saveTodos();
-}
-
-function paintTodo2(text) {
-  var finishedLi = document.createElement('li');
-  var delBtn = document.createElement('button');
-  var pendingBtn = document.createElement('button');
-  var newId = finishedTodos.length + 1;
-  var finishSpan = document.createElement('span');
-  delBtn.innerHTML = 'Delete';
-  pendingBtn.innerHTML = 'Pending';
-  finishSpan.innerText = "".concat(text, " ");
-  delBtn.addEventListener('click', deleteFinish);
-  pendingBtn.addEventListener('click', returnPending);
-  finishedLi.appendChild(finishSpan);
-  finishedLi.appendChild(delBtn);
-  finishedLi.appendChild(pendingBtn);
-  finishedLi.id = newId;
-  finishedList.appendChild(finishedLi);
-  var toDoObj = {
-    text: text,
-    id: newId
-  };
-  finishedTodos.push(toDoObj);
   saveTodos();
 }
 
 function handleSubmit(event) {
   event.preventDefault();
   var currentValue = taskInput.value;
-  paintTodo(currentValue);
-  taskInput.value = '';
+  paintTodo(currentValue, "pending");
+  taskInput.value = "";
 }
 
 function init() {
   loadToDos();
-  taskForm.addEventListener('submit', handleSubmit);
+  taskForm.addEventListener("submit", handleSubmit);
 }
 
 init();
@@ -405,7 +363,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54278" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52299" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
