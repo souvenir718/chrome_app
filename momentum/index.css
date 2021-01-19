@@ -1,0 +1,28 @@
+body {
+    background-color: rgb(208, 208, 208);
+    color: rgb(41, 57, 79);
+}
+
+input {
+    width: 12rem;
+    height: 1.5rem;
+    border-radius: 0.5rem;
+    padding-left: 0.5rem;
+    outline: none;
+}
+
+.clock {
+    font-size: 4rem;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.greetings {
+    font-size: 2rem;
+}
