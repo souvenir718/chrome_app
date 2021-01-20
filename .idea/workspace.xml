@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="2277d9af-d0e7-4a5b-84b7-ad7c40b66e54" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/day-five-blueprint/.cache/49/24c390b272e88e1e4ea5ae092af18b.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/day-five-blueprint/.cache/6a/cb297f6d18c98134dbe7227407881a.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/day-five-blueprint/.cache/76/7b28cfbd4d48d478d16110816ad722.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/day-five-blueprint/.cache/b3/fcb8a5f84a436486bc2264fe2673e2.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/day-five-blueprint/.cache/ba/71664a9a62a8b589acc9979711d8ab.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/day-five-blueprint/.cache/d3/a30f5610bda435b26f921bdc6fb341.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/day-five-blueprint/dist/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/day-five-blueprint/dist/src.a2b27638.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/day-five-blueprint/dist/src.a2b27638.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/day-five-blueprint/dist/src.a2b27638.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/day-five-blueprint/dist/src.a2b27638.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/day-five-blueprint/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/day-five-blueprint/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/day-five-blueprint/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/day-five-blueprint/src/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/day-five-blueprint/src/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/day-four-blueprint/dist/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/day-four-blueprint/dist/src.a2b27638.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/day-four-blueprint/dist/src.a2b27638.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/day-four-blueprint/dist/src.a2b27638.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/day-four-blueprint/dist/src.a2b27638.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/day-four-blueprint/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/day-four-blueprint/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/day-four-blueprint/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/day-four-blueprint/src/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/day-four-blueprint/src/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/day-seven-blueprint/.cache/29/58da48cc90ed943d01f3a3cee40fc5.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/day-seven-blueprint/.cache/2e/fffb325687691e40adb1009c783188.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/day-seven-blueprint/.cache/61/2f0d897625b26a453c811e240ab7d4.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/day-seven-blueprint/.cache/65/109f910903727c671c73e591514277.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/day-seven-blueprint/.cache/83/cbfe3abcc6b887ed6d10e207deb912.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/day-seven-blueprint/.cache/a7/d066d5239f09f23f7b7a50576f06ef.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/day-seven-blueprint/.cache/b3/55696b236a4d1ea1d9e8fefad597da.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/day-seven-blueprint/.cache/b5/029a9ef3a6f8762c411dcdf048efc8.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/day-seven-blueprint/.cache/da/9a99cc273f711e1182f6518401216d.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/day-seven-blueprint/.cache/de/c52ea709c53ab103098d9372769ca9.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/day-seven-blueprint/.cache/e2/9fd4145a800f94c033bc8eabac890d.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/day-seven-blueprint/.cache/ff/bd5c5740908ffbad2323061f79c1d0.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/day-seven-blueprint/debug.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/day-seven-blueprint/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/day-seven-blueprint/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/day-seven-blueprint/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/day-seven-blueprint/src/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/day-seven-blueprint/src/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/day-six-blueprint/.cache/6b/6a3f4d3fc9f55bfd81497ee97c8c34.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/day-six-blueprint/.cache/af/9f02e808cacaa9fe750900214c573b.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/day-six-blueprint/.cache/b1/c65850a8f7e99db31c22e2b2b9327e.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/day-six-blueprint/.cache/ce/202db8e6b00cf22b775a17d30f350c.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/day-six-blueprint/.cache/d4/051803e586ae93dd881cca047cbc29.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/day-six-blueprint/.cache/f2/c75b7fac0719784a208f5b6c83cab4.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/day-six-blueprint/dist/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/day-six-blueprint/dist/src.a2b27638.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/day-six-blueprint/dist/src.a2b27638.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/day-six-blueprint/dist/src.a2b27638.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/day-six-blueprint/dist/src.a2b27638.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/day-six-blueprint/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/day-six-blueprint/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/day-six-blueprint/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/day-six-blueprint/src/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/day-six-blueprint/src/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/day-three-blueprint/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/day-three-blueprint/src/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/day-three-blueprint/src/styles.css" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1nJETDjZvJ5XyE2PsOlDtAYtJpb" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2277d9af-d0e7-4a5b-84b7-ad7c40b66e54" name="Default Changelist" comment="" />
+      <created>1611099802224</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1611099802224</updated>
+      <workItem from="1611099807134" duration="5000" />
+    </task>
+    <servers />
+  </component>
+</project>
