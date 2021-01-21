@@ -1,0 +1,45 @@
+body {
+    font-family: sans-serif;
+}
+div {
+    overflow: hidden;
+}
+.js-cal {
+    width: fit-content;
+    padding: 1rem;
+    background-color: black;
+}
+.js-result {
+    display: inline-block;
+    color: white;
+    height: 2rem;
+    line-height: 2rem;
+    margin-right: 0.5rem;
+    font-size: 1.3rem;
+    float: right;
+}
+button {
+    width: 5rem;
+    margin: 0.15rem;
+    height: 2rem;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: rgb(54, 52, 57);
+    color: white;
+    cursor: pointer;
+    outline: none;
+}
+
+.zero {
+    width: 10.4rem;
+}
+
+.js-reset {
+    float: right;
+    background-color: rgb(167, 170, 177);
+    margin-right: 0.35rem;
+}
+
+.js-op {
+    background-color: rgb(254, 142, 0);
+}
