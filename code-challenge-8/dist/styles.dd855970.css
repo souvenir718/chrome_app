@@ -30,6 +30,13 @@ button {
     outline: none;
 }
 
+button:hover {
+    background-color: rgb(30, 34, 43);
+}
+button:active {
+    transform: translateY(2px);
+}
+
 .zero {
     width: 10.4rem;
 }
@@ -40,8 +47,16 @@ button {
     margin-right: 0.35rem;
 }
 
+.js-reset:hover {
+    background-color: rgb(132, 134, 138);
+}
+
 .js-op {
     background-color: rgb(254, 142, 0);
+}
+
+.js-op:hover {
+    background-color: rgb(247, 171, 9);
 }
 
 
