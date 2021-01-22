@@ -1,10 +1,9 @@
-const body = document.querySelector('body'),
-    img = body.querySelector('img');
+const bg = document.getElementById('js-bg');
 
 const IMG_NUMBER = 5;
 
 function paintImage(imgNumber) {
-    // img.src = `../images/${imgNumber}.jpg`;
+    bg.style.backgroundImage = `url(images/${imgNumber + 1}.jpg)`;
 }
 
 function genRandom() {
@@ -13,7 +12,11 @@ function genRandom() {
 }
 
 function init() {
-    const randomNumber = genRandom();
+    let randomNumber = genRandom();
     paintImage(randomNumber);
+    setInterval(() => {
+        randomNumber = genRandom();
+        paintImage(randomNumber);
+    }, 60000);
 }
 init();

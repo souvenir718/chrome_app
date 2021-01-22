@@ -12,7 +12,7 @@ function handleName(event) {
 }
 
 function writeName(text) {
-    nameSpace.innerHTML = `Hello, ${text}`;
+    nameSpace.innerHTML = `Hello, ${text} 😎`;
 }
 
 function hideForm() {
