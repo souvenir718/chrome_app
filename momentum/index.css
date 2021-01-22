@@ -42,10 +42,11 @@ input::placeholder {
 }
 
 .search-container {
+    position: absolute;
     font-size: 120%;
     color: white;
-    flex-direction: row;
     cursor: pointer;
+    display: inline-block;
 }
 
 .search-container input {
