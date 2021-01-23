@@ -62,5 +62,5 @@
 #### **토, 일 | ~~Day 13. 14~~**
 
 - ✍️ 복습
-- ✔️ [졸업작품](souvenir718.github.io) ✔️ fin.
-- 🏆 [Certificate](https://github.com/souvenir718/TIL/blob/master/Certificate/%EB%B0%94%EB%8B%90%EB%9D%BC%20JS%EB%A1%9C%20%ED%81%AC%EB%A1%AC%20%EC%95%B1%20%EB%A7%8C%EB%93%A4%EA%B8%B0.pdf)
+- ✔️ [졸업작품](https://souvenir718.github.io) ✔️ fin.
+### 🏆 [Certificate](https://github.com/souvenir718/TIL/blob/master/Certificate/%EB%B0%94%EB%8B%90%EB%9D%BC%20JS%EB%A1%9C%20%ED%81%AC%EB%A1%AC%20%EC%95%B1%20%EB%A7%8C%EB%93%A4%EA%B8%B0.pdf)
