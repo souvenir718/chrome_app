@@ -117,7 +117,7 @@
 
 
 
-### ✔️ [졸업작품](https://souvenir718.github.io) ✔️ 
+### ✔️ [졸업작품](https://souvenir718.github.io/soumentum/) ✔️ 
 
 ![](./image/졸업작품.png) 
 
